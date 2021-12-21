@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data;
 
 namespace Academy.Week4.Ticketing.Core.BusinessLayer
 {
@@ -27,9 +28,9 @@ namespace Academy.Week4.Ticketing.Core.BusinessLayer
             return _ticketsRepository.FetchAllId();
         }
 
-        public void FetchAllTickets()
+        public DataSet FetchAllTickets()
         {
-            _ticketsRepository.FetchAll();
+            return _ticketsRepository.FetchAll();
         }
 
         public void InsertNewTicket(string descrizione, DateTime data, string utente, string stato)

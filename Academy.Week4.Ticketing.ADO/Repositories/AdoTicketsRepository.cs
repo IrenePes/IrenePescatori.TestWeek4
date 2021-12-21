@@ -12,7 +12,7 @@ namespace Academy.Week4.Ticketing.ADO.Repositories
     public class AdoTicketsRepository : ITicketsRepository
     {
         static string connectionStringSQL = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=Ticketing;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
-        public void FetchAll()
+        public DataSet FetchAll()
         {
             DataSet ticketDS = new DataSet();
             using SqlConnection connessione = new SqlConnection(connectionStringSQL);
@@ -34,36 +34,39 @@ namespace Academy.Week4.Ticketing.ADO.Repositories
                 Console.WriteLine("Connessione chiusa");
                 Console.WriteLine("\n");
 
-                foreach (DataTable table in ticketDS.Tables)
-                {
-                    Console.WriteLine($"{table.TableName} - {table.Rows.Count}");
-                }
+                //foreach (DataTable table in ticketDS.Tables)
+                //{
+                //    Console.WriteLine($"{table.TableName} - {table.Rows.Count}");
+                //}
 
 
-                Console.WriteLine("\n");
-                Console.WriteLine("-------Tickets Columns-------");
-                foreach (DataColumn colonna in ticketDS.Tables["Tickets"].Columns)
-                {
-                    Console.WriteLine($"{colonna.ColumnName} - {colonna.DataType}");
-                }
+                //Console.WriteLine("\n");
+                //Console.WriteLine("-------Tickets Columns-------");
+                //foreach (DataColumn colonna in ticketDS.Tables["Tickets"].Columns)
+                //{
+                //    Console.WriteLine($"{colonna.ColumnName} - {colonna.DataType}");
+                //}
 
 
-                Console.WriteLine("\n");
-                Console.WriteLine("-------Tickets Rows-------");
-                foreach (DataRow riga in ticketDS.Tables["Tickets"].Rows)
-                {
-                    Console.WriteLine($"{riga["ID"]} - {riga["Descrizione"]} - {riga["Data"]} - {riga["Utente"]} - {riga["Stato"]}");
-                }
-                Console.WriteLine("\n");
+                //Console.WriteLine("\n");
+                //Console.WriteLine("-------Tickets Rows-------");
+                //foreach (DataRow riga in ticketDS.Tables["Tickets"].Rows)
+                //{
+                //    Console.WriteLine($"{riga["ID"]} - {riga["Descrizione"]} - {riga["Data"]} - {riga["Utente"]} - {riga["Stato"]}");
+                //}
+                //Console.WriteLine("\n");
+                return ticketDS;
             }
             catch (SqlException ex)
             {
                 Console.WriteLine($"Errore SQL: {ex.Message}");
+                return null;
             }
 
             catch (Exception ex)
             {
                 Console.WriteLine($"Errore generico: {ex.Message}");
+                return null;
             }
 
             finally

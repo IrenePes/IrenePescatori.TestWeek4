@@ -3,6 +3,7 @@ using Academy.Week4.Ticketing.Core.BusinessLayer;
 using Academy.Week4.Ticketing.Core.Interfaces;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -107,7 +108,29 @@ namespace Academy.Week4.Ticketing.Client
 
         public static void FetchAllTickets()
         {
-            mainBL.FetchAllTickets();
+            DataSet ticketDS = mainBL.FetchAllTickets();
+
+            foreach (DataTable table in ticketDS.Tables)
+            {
+                Console.WriteLine($"{table.TableName} - {table.Rows.Count}");
+            }
+
+
+            Console.WriteLine("\n");
+            Console.WriteLine("-------Tickets Columns-------");
+            foreach (DataColumn colonna in ticketDS.Tables["Tickets"].Columns)
+            {
+                Console.WriteLine($"{colonna.ColumnName} - {colonna.DataType}");
+            }
+
+
+            Console.WriteLine("\n");
+            Console.WriteLine("-------Tickets Rows-------");
+            foreach (DataRow riga in ticketDS.Tables["Tickets"].Rows)
+            {
+                Console.WriteLine($"{riga["ID"]} - {riga["Descrizione"]} - {riga["Data"]} - {riga["Utente"]} - {riga["Stato"]}");
+            }
+            Console.WriteLine("\n");
         }
     }
 }
