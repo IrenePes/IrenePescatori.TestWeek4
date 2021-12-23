@@ -7,15 +7,23 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AcademyD_ADOEF.ConsoleApp",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Academy_Week4_Esercitazione1", "Academy_Week4_Esercitazione1\Academy_Week4_Esercitazione1.csproj", "{A1535A3A-05F0-452B-8ACF-243494B50315}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AcademyD_ADOEF.Disconnected", "AcademyD_ADOEF.Disconnected\AcademyD_ADOEF.Disconnected.csproj", "{D96AD34A-3DEB-41E9-B6A0-0F3F7DDC64A0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AcademyD_ADOEF.Disconnected", "AcademyD_ADOEF.Disconnected\AcademyD_ADOEF.Disconnected.csproj", "{D96AD34A-3DEB-41E9-B6A0-0F3F7DDC64A0}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Esercitazione2", "Esercitazione2", "{52C50A0B-12D4-4A87-B779-269BD406C175}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Academy.Week4.Ticketing.Core", "Academy.Week4.Ticketing.Core\Academy.Week4.Ticketing.Core.csproj", "{13F056F2-522A-4288-BAEE-991B3FE746DF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Academy.Week4.Ticketing.Core", "Academy.Week4.Ticketing.Core\Academy.Week4.Ticketing.Core.csproj", "{13F056F2-522A-4288-BAEE-991B3FE746DF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Academy.Week4.Ticketing.ADO", "Academy.Week4.Ticketing.ADO\Academy.Week4.Ticketing.ADO.csproj", "{AD781B6F-7C13-41DF-A9E7-BF51ABC784F1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Academy.Week4.Ticketing.ADO", "Academy.Week4.Ticketing.ADO\Academy.Week4.Ticketing.ADO.csproj", "{AD781B6F-7C13-41DF-A9E7-BF51ABC784F1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Academy.Week4.Ticketing.Client", "Academy.Week4.Ticketing.Client\Academy.Week4.Ticketing.Client.csproj", "{DAB52700-C025-4213-845B-FF4245A65967}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Academy.Week4.Ticketing.Client", "Academy.Week4.Ticketing.Client\Academy.Week4.Ticketing.Client.csproj", "{DAB52700-C025-4213-845B-FF4245A65967}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Week4.EsempioEF1", "Week4.EsempioEF1\Week4.EsempioEF1.csproj", "{8F0525C5-CDF4-4932-A7C4-FDFE8DA7CA7E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Week4.EsempioEF2", "Week4.EsempioEF2\Week4.EsempioEF2.csproj", "{D3ECA629-05A3-47F1-A740-6B038CEAE7DA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EsercitazioneFinaleWeek4", "EsercitazioneFinaleWeek4", "{DC316A5A-41A5-4178-9A9C-64B68C898ACB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Academy.Week4.EsercitazioneFinale", "Academy.Week4.EsercitazioneFinale\Academy.Week4.EsercitazioneFinale.csproj", "{7A1CD59F-9333-45C6-8693-284722C1DDA7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -47,6 +55,18 @@ Global
 		{DAB52700-C025-4213-845B-FF4245A65967}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DAB52700-C025-4213-845B-FF4245A65967}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DAB52700-C025-4213-845B-FF4245A65967}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F0525C5-CDF4-4932-A7C4-FDFE8DA7CA7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F0525C5-CDF4-4932-A7C4-FDFE8DA7CA7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F0525C5-CDF4-4932-A7C4-FDFE8DA7CA7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F0525C5-CDF4-4932-A7C4-FDFE8DA7CA7E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3ECA629-05A3-47F1-A740-6B038CEAE7DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3ECA629-05A3-47F1-A740-6B038CEAE7DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3ECA629-05A3-47F1-A740-6B038CEAE7DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3ECA629-05A3-47F1-A740-6B038CEAE7DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A1CD59F-9333-45C6-8693-284722C1DDA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A1CD59F-9333-45C6-8693-284722C1DDA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A1CD59F-9333-45C6-8693-284722C1DDA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A1CD59F-9333-45C6-8693-284722C1DDA7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -55,6 +75,7 @@ Global
 		{13F056F2-522A-4288-BAEE-991B3FE746DF} = {52C50A0B-12D4-4A87-B779-269BD406C175}
 		{AD781B6F-7C13-41DF-A9E7-BF51ABC784F1} = {52C50A0B-12D4-4A87-B779-269BD406C175}
 		{DAB52700-C025-4213-845B-FF4245A65967} = {52C50A0B-12D4-4A87-B779-269BD406C175}
+		{7A1CD59F-9333-45C6-8693-284722C1DDA7} = {DC316A5A-41A5-4178-9A9C-64B68C898ACB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7104C0A7-ECE6-487C-B0F6-EA876AAB5C1B}
